@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cefmsdft5eqq6" path="res://assets/helicopter-green.png" id="1_ehvns"]
 [ext_resource type="Script" uid="uid://hjuqpsuxms8n" path="res://helicopter_green.gd" id="1_y5vgd"]
+[ext_resource type="Texture2D" uid="uid://b5fw3g5b7vvcw" path="res://assets/helicopter-rotor.png" id="3_13uo2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ehvns"]
 size = Vector2(60, 121)
@@ -10,11 +11,15 @@ size = Vector2(60, 121)
 position = Vector2(253, 145)
 script = ExtResource("1_y5vgd")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1642256400]
-position = Vector2(-0.5, -0.5)
+[node name="Helicopter" type="Sprite2D" parent="." unique_id=1642256400]
+position = Vector2(-0.5, 13.5)
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("1_ehvns")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=541581810]
-position = Vector2(4, 0)
+position = Vector2(0, 13)
 shape = SubResource("RectangleShape2D_ehvns")
+
+[node name="HelicopterRottor" type="Sprite2D" parent="." unique_id=303151357]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_13uo2")
