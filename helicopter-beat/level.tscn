@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dhb4bmoiypa4p"]
+
+[ext_resource type="PackedScene" uid="uid://cocysvf4jntsd" path="res://helicopter_green.tscn" id="1_u52ul"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u52ul"]
+size = Vector2(1937.5, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vonw3"]
+size = Vector2(80.5, 1120.5)
+
+[node name="Level" type="Node2D" unique_id=1692490529]
+
+[node name="Helicopter Green" parent="." unique_id=132967677 instance=ExtResource("1_u52ul")]
+
+[node name="Border" type="Node2D" parent="." unique_id=106037503]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Border" unique_id=1015747182]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border/StaticBody2D" unique_id=1654793989]
+position = Vector2(959.25, -44)
+shape = SubResource("RectangleShape2D_u52ul")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Border" unique_id=1163166849]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border/StaticBody2D2" unique_id=1060575199]
+position = Vector2(963, 1124)
+shape = SubResource("RectangleShape2D_u52ul")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Border" unique_id=588680205]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border/StaticBody2D3" unique_id=1433758117]
+position = Vector2(1958.75, 548.75)
+shape = SubResource("RectangleShape2D_vonw3")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Border" unique_id=228352931]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border/StaticBody2D4" unique_id=2080168042]
+position = Vector2(-36, 542)
+shape = SubResource("RectangleShape2D_vonw3")

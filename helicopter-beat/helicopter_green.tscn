@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cocysvf4jntsd"]
+
+[ext_resource type="Texture2D" uid="uid://cefmsdft5eqq6" path="res://assets/helicopter-green.png" id="1_ehvns"]
+[ext_resource type="Script" uid="uid://hjuqpsuxms8n" path="res://helicopter_green.gd" id="1_y5vgd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ehvns"]
+size = Vector2(60, 121)
+
+[node name="Helicopter Green" type="CharacterBody2D" unique_id=132967677]
+position = Vector2(253, 145)
+script = ExtResource("1_y5vgd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1642256400]
+position = Vector2(-0.5, -0.5)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_ehvns")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=541581810]
+position = Vector2(4, 0)
+shape = SubResource("RectangleShape2D_ehvns")
